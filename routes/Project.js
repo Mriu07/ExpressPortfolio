@@ -3,8 +3,8 @@ const express = require('express')
 
 const router = express.Router();
 
-router.get('/', (request, response, next) =>{
-    response.render('Project/index', {title: 'My Express Projects'})
+router.get('/contact', (request, response, next) =>{
+    response.render('contact', {title: 'Contact Me'})
 })
 
-module.exports = router
+module.exports = router;

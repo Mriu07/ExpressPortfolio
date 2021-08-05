@@ -7,7 +7,20 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/about', (req, res, next) =>{
-  res.render('about', { title: 'About US'});
+  res.render('about', { title: 'About Me'});
 });
+
+router.get('/skills', (request, response, next) =>{
+  response.render('myskills', {title: 'My Skills'})
+});
+
+router.get('/work', (request, response, next) =>{
+  response.render('mywork', {title: 'My Work'})
+});
+
+router.get('/contact', (request, response, next) =>{
+  response.render('contact', {title: 'Contact Me'})
+})
+
 
 module.exports = router;
